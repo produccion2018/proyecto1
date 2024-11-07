@@ -140,3 +140,56 @@ footer {
     padding: 1rem;
     text-align: center;
 }
+
+/*  */
+/* Posiciona el botón en la esquina superior derecha */
+.bw-mode-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bw-mode-btn:hover {
+    background-color: #555;
+}
+
+/* Estilos para el modo Blanco y Negro */
+.bw-mode {
+    filter: grayscale(100%);
+    background-color: #f0f0f0;
+}
+
+.bw-mode .navbar {
+    background-color: #ddd;
+}
+
+.bw-mode .hero,
+.bw-mode .transmision,
+.bw-mode .calendario,
+.bw-mode .contacto {
+    background-color: #f7f7f7;
+}
+
+.bw-mode footer {
+    background-color: #ddd;
+}
+
+.bw-mode h1, 
+.bw-mode h2, 
+.bw-mode h3, 
+.bw-mode p, 
+.bw-mode a {
+    color: #000;
+}
+
+.bw-mode .btn-primary {
+    background-color: #555;
+    color: #fff;
+}
