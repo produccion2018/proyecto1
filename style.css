@@ -142,54 +142,37 @@ footer {
 }
 
 /*  */
-/* Posiciona el botón en la esquina superior derecha */
-.bw-mode-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 15px;
+/* Estilo para el botón de modo oscuro */
+.mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: transparent;
     border: none;
-    border-radius: 5px;
+    font-size: 24px;
     cursor: pointer;
-    font-weight: bold;
+    color: #333;
+    z-index: 1000;
+    transition: color 0.3s;
 }
 
-.bw-mode-btn:hover {
-    background-color: #555;
+/* Estilo de la página en modo claro */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Estilos para el modo Blanco y Negro */
-.bw-mode {
-    filter: grayscale(100%);
-    background-color: #f0f0f0;
+/* Estilo para modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
-.bw-mode .navbar {
-    background-color: #ddd;
-}
-
-.bw-mode .hero,
-.bw-mode .transmision,
-.bw-mode .calendario,
-.bw-mode .contacto {
-    background-color: #f7f7f7;
-}
-
-.bw-mode footer {
-    background-color: #ddd;
-}
-
-.bw-mode h1, 
-.bw-mode h2, 
-.bw-mode h3, 
-.bw-mode p, 
-.bw-mode a {
-    color: #000;
-}
-
-.bw-mode .btn-primary {
-    background-color: #555;
+/* Estilo para el encabezado */
+header.navbar {
+    background-color: #2c2c2c;
+    padding: 20px;
     color: #fff;
 }
