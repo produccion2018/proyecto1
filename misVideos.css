@@ -162,7 +162,7 @@
     transform: scale(0.95);
 }
 
-/* responsive */
+
 /* Reset de estilos */
 * {
     box-sizing: border-box;
@@ -172,12 +172,11 @@
 
 .misVideos {
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
     color: #333;
     background-color: #f9f9f9;
 }
 
+/* Barra de navegación superior */
 .navbar {
     position: fixed;
     width: 100%;
@@ -187,7 +186,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px;
     z-index: 10;
 }
 
@@ -212,10 +211,6 @@
 .subscribe-logo:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px #00000033;
-}
-
-.subscribe-logo:active {
-    transform: scale(0.95);
 }
 
 .search-container {
@@ -244,7 +239,7 @@
     margin-left: 5px;
 }
 
-/* Menú de Navegación Lateral */
+/* Menú de navegación lateral */
 .side-nav {
     width: 200px;
     background-color: #fff;
@@ -253,6 +248,7 @@
     top: 0;
     bottom: 0;
     overflow-y: auto;
+    display: block;
 }
 
 .side-nav ul {
@@ -285,14 +281,17 @@
     width: calc(100% - 220px);
 }
 
+/* Grid de videos usando Flexbox */
 .video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .video-item {
-    position: relative;
+    flex: 1 1 240px; /* Flex-grow para adaptarse al espacio disponible */
+    max-width: 300px;
     border-radius: 8px;
     overflow: hidden;
     background-color: #fff;
@@ -307,7 +306,7 @@
 
 .video-thumbnail {
     width: 100%;
-    height: 180px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -354,7 +353,11 @@
     }
 
     .video-grid {
-        grid-template-columns: 1fr; /* Cambia a una columna en móviles */
+        flex-direction: column; /* Cambia a una columna en móviles */
+    }
+
+    .video-item {
+        max-width: 100%;
     }
 }
 
@@ -375,9 +378,9 @@
         width: 100%;
         padding: 6px;
     }
-    
+
     .video-thumbnail {
-        height: 120px; /* Ajuste para miniaturas más pequeñas en móviles */
+        height: auto;
     }
 
     .video-title {
