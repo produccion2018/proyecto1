@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Lista de videos de YouTube (ID de cada video)
     const videos = [
-        { title: "Video 1", id: "dQw4w9WgXcQ" }, // Este es un ejemplo de ID
+        { title: "Video 1", id: "69RdQFDuYPI" }, // Este es un ejemplo de ID
         { title: "Video 2", id: "9bZkp7q19f0" },
         { title: "Video 3", id: "kJQP7kiw5Fk" },
         { title: "Video 4", id: "3JZ_D3ELwOQ" },
