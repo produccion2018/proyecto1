@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Lista de videos de YouTube (ID de cada video)
     const videos = [
         { title: "Video 1", id: "69RdQFDuYPI" }, // Este es un ejemplo de ID
-        { title: "Video 2", id: "9bZkp7q19f0" },
-        { title: "Video 3", id: "kJQP7kiw5Fk" },
-        { title: "Video 4", id: "3JZ_D3ELwOQ" },
-        { title: "Video 5", id: "HgzGwKwLmgM" },
-        { title: "Video 6", id: "l5E6sGQ3CAY" }
+        { title: "Video 2", id: "https://www.youtube.com/watch?v=zZpB-Nfl2-E" },
+        { title: "Video 3", id: "https://www.youtube.com/watch?v=XI-ygY6oEdw" },
+        { title: "Video 4", id: "https://www.youtube.com/watch?v=_CL6n0FJZpk" },
+        { title: "Video 5", id: "https://www.youtube.com/watch?v=41qC3w3UUkU&list=RDEMEqPamFQGhRln1f7nHOzwVQ&start_radio=1&rv=_CL6n0FJZpk" },
+        { title: "Video 6", id: "lhttps://www.youtube.com/watch?v=WDaNJW_jEBo&list=RDEMEqPamFQGhRln1f7nHOzwVQ&index=24" }
     ];
 
     // Ciclo for para agregar los videos a la página
